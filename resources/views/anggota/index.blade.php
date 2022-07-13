@@ -34,9 +34,9 @@
                                     <thead class="thead-light">
                                         <tr>
                                             <th scope="col" class="sort" data-sort="Judul">Nama</th>
-                                            <th scope="col" class="sort" data-sort="Penulis">NIM</th>
+                                            <th scope="col" class="sort" data-sort="Penulis">No Pegawai</th>
                                             <th scope="col" class="sort" data-sort="Penerbit">Jenis Kelamin</th>
-                                            <th scope="col" class="sort" data-sort="Tahun Terbit">Jurusan</th>
+                                            <th scope="col" class="sort" data-sort="Tahun Terbit">Divisi</th>
                                             <th scope="col"></th>
                                         </tr>
                                     </thead>
@@ -160,7 +160,7 @@
                             
                         </div>
                         <div class="form-group">
-                            <label for="">Nim</label>
+                            <label for="">No Pegawai</label>
                             <input type="text"  name="nim"  class="form-control" value="{{ old('nim') }}" autocomplete="off">
                             @error('nim')
                                 <span class="text-danger">{{ $message }}</span>
@@ -181,7 +181,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="">Jurusan</label>
+                            <label for="">Divisi</label>
                             <input type="text" name="jurusan"  class="form-control" value="{{ old('jurusan') }}">
                             @error('jurusan')
                                 <span class="text-danger">{{ $message }}</span>

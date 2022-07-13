@@ -38,7 +38,7 @@
                 <!-- Brand -->
                 <div class="sidenav-header  align-items-center">
                     <a class="navbar-brand" href="javascript:void(0)">
-                        <img src="{{ asset('template') }}/img/brand/blue.png" class="navbar-brand-img" alt="...">
+                        <img src="https://s3-eu-west-1.amazonaws.com/static.fimewc.com/wp-content/uploads/2019/11/TVRI_Logo19.jpg" class="navbar-brand-img" alt="...">
                     </a>
                 </div>
                 <div class="navbar-inner">
@@ -65,7 +65,7 @@
                             <a class="nav-link {{ request()->is('buku') ? 'active' : '' }}"
                                 href="{{ route('buku.index') }}">
                                 <i class="ni ni-books text-green"></i>
-                                <span class="nav-link-text">Buku</span>
+                                <span class="nav-link-text">Barang</span>
                             </a>
                         </li>
                         <li class="nav-item">

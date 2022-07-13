@@ -2,7 +2,7 @@
 @section('content')
     <div class="row ">
         <div class="col-md-6 mt-4 mb-2">
-            <a class="btn btn-secondary btn-rounded" data-toggle="modal" data-target="#tambahBuku"> Tambah Buku</a>
+            <a class="btn btn-secondary btn-rounded" data-toggle="modal" data-target="#tambahBuku"> Tambah Barang</a>
         </div>
         <div class="col-md-6 mt-4 mb-3 d-flex justify-content-end">
               <!-- Search form -->
@@ -26,9 +26,9 @@
                     <table class="table align-items-center table-flush">
                         <thead class="thead-light">
                             <tr>
-                                <th scope="col" class="sort" data-sort="Judul">Judul</th>
-                                <th scope="col" class="sort" data-sort="Penulis">Penulis</th>
-                                <th scope="col" class="sort" data-sort="Penerbit">Penerbit</th>
+                                <th scope="col" class="sort" data-sort="Judul">Nama Barang</th>
+                                <th scope="col" class="sort" data-sort="Penulis">Jenis</th>
+                                <th scope="col" class="sort" data-sort="Penerbit">Merk</th>
                                 <th scope="col" class="sort" data-sort="Tahun Terbit">Tahun Terbit</th>
                                 <th scope="col"></th>
                             </tr>
@@ -131,7 +131,7 @@
         <div class="modal-dialog  mt-5">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Tambah Buku</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Tambah Barang</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -142,35 +142,35 @@
                         @csrf
                         @method('post')
                         <div class="form-group">
-                            <label for="">Judul</label>
+                            <label for="">Nama Barang</label>
                             <input type="text" name="judul" value="{{ old('judul') }}" class="form-control">
                             @error('judul')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="">ISBN</label>
+                            <label for="">Code Barang</label>
                             <input type="text" name="isbn" value="{{ old('isbn') }}" class="form-control">
                             @error('isbn')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="">Penulis</label>
+                            <label for="">Jenis Barang</label>
                             <input type="text" name="penulis" value="{{ old('penulis') }}" class="form-control">
                             @error('penulis')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="">Penerbit</label>
+                            <label for="">Merk</label>
                             <input type="text" name="penerbit" value="{{ old('penerbit') }}" class="form-control">
                             @error('penerbit')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="">Tahun Terbit</label>
+                            <label for="">Tahun Barang</label>
                             <input type="number" min="0" name="tahun_terbit" value="{{ old('tahun_terbit') }}" class="form-control">
                             @error('tahun_terbit')
                                 <span class="text-danger">{{ $message }}</span>
@@ -224,7 +224,7 @@
         <div class="modal-dialog">
             <div class="modal-content  mt-5">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Detail Buku</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Detail Barang</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -241,7 +241,7 @@
         <div class="modal-dialog  mt-5">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Buku</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Barang</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
